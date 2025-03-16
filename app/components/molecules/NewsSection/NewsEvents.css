@@ -1,0 +1,84 @@
+/* Layout */
+.news-section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: "Lora", serif;
+    background-color: #f5f5f5;
+}
+
+/* Typography */
+.news-title {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #000;
+}
+
+.highlight {
+    color: #0197E7;
+    font-weight: 600;
+}
+
+/* Card */
+.news-card {
+    display: flex;
+    background: #f5f5f5;
+    margin-top: 25px;
+    overflow: hidden;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
+.news-image {
+    width: 400px;
+    height: 380px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* Content */
+.news-content {
+    padding: 15px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Header */
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #6c757d;
+}
+
+/* Title */
+.news-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #212529;
+}
+
+/* Button */
+.news-button {
+    display: inline-block;
+    background: #C13235;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 2%;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.news-button:hover {
+    background: #c9302c;
+}

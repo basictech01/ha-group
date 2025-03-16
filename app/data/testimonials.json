@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "GOLDEN SEA Ltd",
+        "date": "2024-11-12",
+        "rating": 4,
+        "image": "/assets/images/home/user1.png",
+        "message": "Thank you very Mr. Yasser. The process was so fast .. your follow up was amazing and the cost was very reasonable.."
+    },
+    {
+        "id": 2,
+        "name": "GOLDEN SEA Ltd",
+        "date": "2024-11-12",
+        "rating": 5,
+        "image": "/assets/images/home/user2.png",
+        "message": "Thank you very Mr. Yasser. The process was so fast .. your follow up was amazing and the cost was very reasonable.."
+    },
+    {
+        "id": 3,
+        "name": "GOLDEN SEA Ltd",
+        "date": "2024-11-12",
+        "rating": 3,
+        "image": "/assets/images/home/user3.png",
+        "message": "Thank you very Mr. Yasser. The process was so fast .. your follow up was amazing and the cost was very reasonable.."
+    }
+]

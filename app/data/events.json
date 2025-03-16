@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "date": "2021-03-14",
+        "image": "assets/images/home/event1.png",
+        "description": "Lorem consequat, dolore iriure facilisi."
+    },
+    {
+        "id": 2,
+        "date": "2021-03-19",
+        "image": "assets/images/home/event2.png",
+        "description": "Lorem consequat, dolore iriure facilisi."
+    },
+    {
+        "id": 3,
+        "date": "2021-04-20",
+        "image": "assets/images/home/event3.png",
+        "description": "Lorem consequat, dolore iriure facilisi."
+    }
+]

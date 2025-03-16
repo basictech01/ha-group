@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "image": "assets/images/home/blog.png",
+        "title": "HA Group, an innovative 4G/5G System on a Chip (SoC) in the semiconductor startup.",
+        "author": "Actiontec",
+        "date": "February 24, 2024",
+        "description": "HA Group, an innovative 4G/5G System on a Chip (SoC) semiconductor startup..."
+    },
+    {
+        "id": 2,
+        "image": "assets/images/home/article-1.png",
+        "blogName": "IEEE ComSoc Technology Blog",
+        "date": "March 03, 2024",
+        "description": "HA Group, an innovative 4G/5G System on a Chip (SoC) semiconductor startup..."
+    },
+    {
+        "id": 3,
+        "image": "assets/images/home/article2.png",
+        "blogName": "IEEE ComSoc Technology Blog",
+        "date": "March 03, 2024",
+        "description": "HA Group, an innovative 4G/5G System on a Chip (SoC) semiconductor startup..."
+    }
+]

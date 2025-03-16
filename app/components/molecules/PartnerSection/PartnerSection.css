@@ -1,0 +1,72 @@
+.partner-section {
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+    background: #fff;
+    font-family: 'Lora', serif;
+}
+
+.partner-section h2 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #000;
+}
+
+.partner-section .highlight {
+    color: #0197E7;
+    font-weight: 600;
+}
+
+.partner-slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.partner-track {
+    display: flex;
+    width: max-content;
+    gap: 50px;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.partner-track img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Animations */
+.track-left {
+    animation-name: slide-left;
+}
+
+.track-right {
+    animation-name: slide-right;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(30%);
+    }
+
+    to {
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-30%);
+    }
+
+    to {
+        transform: translateX(30%);
+    }
+}

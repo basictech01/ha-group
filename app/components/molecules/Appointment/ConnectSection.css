@@ -1,0 +1,37 @@
+.connect-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.connect-text {
+    width: 100%;
+}
+
+.connect-content {
+    font-size: 26px;
+    font-weight: 100;
+    color: #444;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.connect-bold {
+    font-weight: 400;
+}
+
+.connect-button {
+    background-color: #b02727;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.connect-button:hover {
+    background-color: #8c1f1f;
+}
