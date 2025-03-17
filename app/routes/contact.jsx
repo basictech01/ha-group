@@ -15,10 +15,10 @@ export default function Contact() {
 
     const businessGoals = [
         "Digital Transformation / BPO",
-        "Modernise Legacy Systems &Technology",
+        "Modernise Legacy Systems & Technology",
         "Develop Robust Apps & Products",
         "Scale or Building In-House Tech Tearms",
-        "Unlock Value With Data & Analyticecs",
+        "Unlock Value With Data & Analytics",
         "Create Stunning Digital Experiences"
     ];
 
