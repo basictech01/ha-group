@@ -4,4 +4,5 @@ export default [
     index("routes/home.jsx"),
     route("appointment", "routes/appointment.jsx"),
     route("about", "routes/about.jsx"),
+    route("contact", "routes/contact.jsx"),
 ];
