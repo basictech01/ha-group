@@ -7,7 +7,7 @@ const NavMenu = () => {
         { label: "Services", href: "#" },
         { label: "Blog", href: "#" },
         { label: "About us", href: "/about" },
-        { label: "Contact us", href: "#" },
+        { label: "Contact us", href: "/contact" },
     ];
 
     return (

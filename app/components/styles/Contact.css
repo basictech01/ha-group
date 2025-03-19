@@ -1,0 +1,338 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.contact-hero-section {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.contact-hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -160px;
+    right: -160px;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05), transparent);
+    pointer-events: none;
+}
+
+.testimonials-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    margin-bottom: 16px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.testimonial-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    color: #1A1A1A;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.testimonial-role {
+    color: #666;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.testimonial-rating {
+    color: #FFB800;
+    font-size: 14px;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    color: #1A1A1A;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
+}
+
+.contact-header {
+    margin-bottom: 0;
+    max-width: 650px;
+}
+
+.contact-form-section {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #F5F5F5;
+}
+
+.lets-contact {
+    display: block;
+    color: #FFB800;
+    font-size: 1rem;
+    font-weight: 550;
+    margin-bottom: 12px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.contact-header h1 {
+    font-size: 4rem;
+    margin-bottom: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #1A1A1A;
+    font-family: 'Lora', serif;
+    max-width: 600px;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.action-button {
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+}
+
+.schedule-now {
+    background-color: #0197E7;
+    color: white;
+    border: none;
+}
+
+.schedule-now:hover {
+    background-color: #0085CE;
+}
+
+.drop-message {
+    background-color: transparent;
+    color: #0197E7;
+    border: 2px solid #0197E7;
+}
+
+.drop-message:hover {
+    background-color: #0197E7;
+    color: white;
+}
+
+.contact-form-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group label.required::after {
+    content: "*";
+    color: #C13235;
+    margin-left: 4px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.phone-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.country-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    width: 120px;
+}
+
+.phone-input {
+    flex: 1;
+}
+
+.country-select {
+    width: 120px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.country-select:focus {
+    outline: none;
+    border-color: #C13235;
+}
+
+.phone-input {
+    flex: 1;
+}
+
+.business-goals {
+    flex: 1;
+    max-width: 500px;
+}
+
+.business-goals h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Lora', serif;
+    color: #1A1A1A;
+}
+
+.goals-list {
+    list-style: none;
+    padding: 0;
+}
+
+.goal-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: 'Source Sans 3', sans-serif;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.goal-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(1, 151, 231, 0.1);
+    background-color: #f8fcff;
+    border-left: 3px solid #0197E7;
+}
+
+.tick-mark {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background-color: #0197E7;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.1s ease;
+}
+
+.goal-item:hover .tick-mark {
+    transform: scale(1.1);
+    background-color: #0085CE;
+    box-shadow: 0 0 8px rgba(1, 151, 231, 0.3);
+}
+
+.tick-mark::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-image: url('/assets/images/blue-checkmark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(5);
+}
+
+.submit-button {
+    background-color: #0197E7;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Source Sans 3', sans-serif;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0085CE;
+}
+
+.recaptcha-container {
+    margin: 20px 0;
+}
