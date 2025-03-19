@@ -3,15 +3,28 @@
     margin: 0 auto;
     padding: 40px 20px;
     font-family: 'Source Sans 3', sans-serif;
+    background-color: #F5F5F5;
 }
 
 .contact-hero-section {
     display: grid;
     grid-template-columns: 1fr 300px;
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #eee;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.contact-hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -160px;
+    right: -160px;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05), transparent);
+    pointer-events: none;
 }
 
 .testimonials-section {
@@ -19,15 +32,16 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .testimonial-card {
     background: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     max-width: 300px;
+    margin-bottom: 16px;
 }
 
 .testimonial-header {
@@ -65,7 +79,7 @@
 
 .testimonial-rating {
     color: #FFB800;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 6px;
     letter-spacing: 2px;
 }
@@ -88,24 +102,26 @@
     gap: 60px;
     justify-content: space-between;
     margin-top: 40px;
+    background-color: #F5F5F5;
 }
 
 .lets-contact {
     display: block;
     color: #FFB800;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 550;
     margin-bottom: 12px;
     font-family: 'Source Sans 3', sans-serif;
 }
 
 .contact-header h1 {
-    font-size: 3.2rem;
+    font-size: 4rem;
     margin-bottom: 36px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
     color: #1A1A1A;
     font-family: 'Lora', serif;
+    max-width: 600px;
 }
 
 .contact-actions {
@@ -125,23 +141,23 @@
 }
 
 .schedule-now {
-    background-color: #C13235;
+    background-color: #0197E7;
     color: white;
     border: none;
 }
 
 .schedule-now:hover {
-    background-color: #A12225;
+    background-color: #0085CE;
 }
 
 .drop-message {
     background-color: transparent;
-    color: #C13235;
-    border: 2px solid #C13235;
+    color: #0197E7;
+    border: 2px solid #0197E7;
 }
 
 .drop-message:hover {
-    background-color: #C13235;
+    background-color: #0197E7;
     color: white;
 }
 
@@ -156,9 +172,9 @@
     flex: 1;
     max-width: 500px;
     background: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .form-group {
@@ -184,12 +200,25 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
+    background-color: white;
 }
 
 .phone-input-container {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.country-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    width: 120px;
+}
+
+.phone-input {
+    flex: 1;
 }
 
 .country-select {
@@ -220,9 +249,10 @@
 .business-goals h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.2;
     font-family: 'Lora', serif;
+    color: #1A1A1A;
 }
 
 .goals-list {
@@ -234,27 +264,59 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     background: white;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     font-family: 'Source Sans 3', sans-serif;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.goal-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(1, 151, 231, 0.1);
+    background-color: #f8fcff;
+    border-left: 3px solid #0197E7;
 }
 
 .tick-mark {
-    color: #C13235;
-    font-size: 1.2rem;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     margin-right: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #0197E7;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.1s ease;
+}
+
+.goal-item:hover .tick-mark {
+    transform: scale(1.1);
+    background-color: #0085CE;
+    box-shadow: 0 0 8px rgba(1, 151, 231, 0.3);
+}
+
+.tick-mark::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-image: url('/assets/images/blue-checkmark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(5);
 }
 
 .submit-button {
-    background-color: #C13235;
+    background-color: #0197E7;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -264,10 +326,11 @@
     cursor: pointer;
     transition: background-color 0.2s;
     font-family: 'Source Sans 3', sans-serif;
+    width: 100%;
 }
 
 .submit-button:hover {
-    background-color: #A12225;
+    background-color: #0085CE;
 }
 
 .recaptcha-container {

@@ -48,7 +48,7 @@ export default function Contact() {
             <div className="contact-container">
                 <div className="contact-hero-section">
                     <div className="contact-header">
-                        {/*<span className="lets-contact">Let's Contact</span>*/}
+                        <span className="lets-contact">Let's Contact</span>
                         <h1>We'll contact you within a couple of hours to schedule a meeting to discuss your goals.</h1>
                         <div className="contact-actions">
                             <button className="action-button schedule-now">Schedule Now</button>
@@ -58,7 +58,7 @@ export default function Contact() {
                     <div className="testimonials-section">
                         <div className="testimonial-card">
                             <div className="testimonial-header">
-                                <img src="/assets/images/avatar1.jpg" alt="Adrian Barak" className="testimonial-avatar" />
+                                <img src="assets/images/home/user1.png" alt="Adrian Barak" className="testimonial-avatar" />
                                 <div className="testimonial-info">
                                     <span className="testimonial-name">Adrian Barak</span>
                                     <span className="testimonial-role">Web Developer at Google</span>
@@ -69,7 +69,7 @@ export default function Contact() {
                         </div>
                         <div className="testimonial-card">
                             <div className="testimonial-header">
-                                <img src="/assets/images/avatar1.jpg" alt="Adrian Barak" className="testimonial-avatar" />
+                                <img src="/assets/images/home/user2.png" alt="Adrian Barak" className="testimonial-avatar" />
                                 <div className="testimonial-info">
                                     <span className="testimonial-name">Adrian Barak</span>
                                     <span className="testimonial-role">Manager</span>
@@ -86,7 +86,7 @@ export default function Contact() {
                         <ul className="goals-list">
                             {businessGoals.map((goal, index) => (
                                 <li key={index} className="goal-item">
-                                    <span className="tick-mark">✓</span>
+                                    <span className="tick-mark"></span>
                                     {goal}
                                 </li>
                             ))}
@@ -100,6 +100,7 @@ export default function Contact() {
                                 name="firstName"
                                 value={formData.firstName}
                                 onChange={handleInputChange}
+                                placeholder="Name"
                                 required
                             />
                         </div>
@@ -110,6 +111,7 @@ export default function Contact() {
                                 name="companyName"
                                 value={formData.companyName}
                                 onChange={handleInputChange}
+                                placeholder="Company name"
                             />
                         </div>
                         <div className="form-group">
@@ -119,6 +121,7 @@ export default function Contact() {
                                 name="businessEmail"
                                 value={formData.businessEmail}
                                 onChange={handleInputChange}
+                                placeholder="Name"
                                 required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             />
@@ -137,6 +140,7 @@ export default function Contact() {
                                     value={formData.phoneNumber}
                                     onChange={handleInputChange}
                                     className="phone-input"
+                                    placeholder="+92"
                                     required
                                     pattern="[0-9]*"
                                     inputMode="numeric"
@@ -150,12 +154,11 @@ export default function Contact() {
                                 value={formData.message}
                                 onChange={handleInputChange}
                                 rows="4"
+                                placeholder="Name"
                                 required
                             />
                         </div>
-                        <div className="recaptcha-container">
-                            {/*reCAPTCHA component*/}
-                        </div>
+                        {/*Add reCaptcha here*/}
                         <button type="submit" className="submit-button">Submit</button>
                     </form>
 
