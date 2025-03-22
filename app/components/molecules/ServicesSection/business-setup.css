@@ -1,0 +1,144 @@
+.service-container {
+    width: 100%;
+  }
+  
+  .service-row {
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .service-row:first-child {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle black shadow */
+    padding-bottom: 10px; /* Space to prevent overlap */
+}
+
+  /* Reverse the order for alternating rows */
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  
+  /* Text Section */
+  .service-text {
+    width: 40%;
+  }
+  
+  .service-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #1e90ff;
+  }
+  
+  .service-text p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Image Section */
+  .service-image {
+    width: 40%;
+    min-width: 600px;
+    margin-right: 0;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+  }
+
+  .btn{
+    background-color: #e90303;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  /* Responsive Styles */
+@media (max-width: 1024px) {  /* Tablet View */
+    .service-container {
+      width: 100%;
+    }
+  
+    .service-text {
+        margin: 0px 0px 40px 40px;
+      width: 45%;
+    }
+  
+    .service-image {
+      width: 45%;
+    }
+  
+    .triangle-design {
+        display: none; /* Hide triangles on mobile */
+      }
+  
+    .service-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .service-text p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {  /* Mobile View */
+    .service-container{
+        width: 100%;
+    }
+    .service-row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .service-text, .service-image {
+      width: 100%;
+    }
+  
+    .service-text {
+      margin-bottom: 20px;
+    }
+  
+    .triangle-design {
+      display: none; /* Hide triangles on mobile */
+    }
+  
+    .service-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .service-text p {
+      font-size: 0.85rem;
+    }
+    .service-image img{
+        width: 80%;
+    }
+  
+    /* First row image specific changes */
+    .service-row:first-child .service-image img {
+      width: 70%;
+      height: 200px; /* Adjust height for rectangle crop */
+      object-fit: cover; /* Ensures cropping instead of stretching */
+      border-radius: 0; /* Remove rounded corners */
+    }
+  }
+  

@@ -4,7 +4,7 @@ import NavLink from "../atoms/NavLink";
 const NavMenu = () => {
     const links = [
         { label: "Business", href: "#" },
-        { label: "Services", href: "#" },
+        { label: "Services", href: "/services" },
         { label: "Blog", href: "#" },
         { label: "About us", href: "/about" },
         { label: "Contact us", href: "#" },
